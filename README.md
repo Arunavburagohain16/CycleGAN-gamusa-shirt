@@ -5,30 +5,23 @@ Original paper: https://arxiv.org/abs/1703.10593
 
 ## Results on test data
 
-### apple -> orange
+### Shirt -> Native Towel Gamusa design Shirt
 
-| Input | Output | | Input | Output | | Input | Output |
-|-------|--------|-|-------|--------|-|-------|--------|
-|![apple2orange_1](samples/real_apple2orange_1.jpg) | ![apple2orange_1](samples/fake_apple2orange_1.jpg)| |![apple2orange_2](samples/real_apple2orange_2.jpg) | ![apple2orange_2](samples/fake_apple2orange_2.jpg)| |![apple2orange_3](samples/real_apple2orange_3.jpg) | ![apple2orange_3](samples/fake_apple2orange_3.jpg)|
+| Input | Output | | Input | Output |
+|-------|--------|-|-------|--------|
+|![apple2orange_1](res/2.jpg) | ![apple2orange_1](res/res_2.jpg)| |![apple2orange_2](res/3.jpg) | ![apple2orange_2](res/res_3.jpg.jpg)| 
 
-
-### orange -> apple
-
-| Input | Output | | Input | Output | | Input | Output |
-|-------|--------|-|-------|--------|-|-------|--------|
-|![orange2apple_1](samples/real_orange2apple_1.jpg) | ![orange2apple_1](samples/fake_orange2apple_1.jpg)| |![orange2apple_2](samples/real_orange2apple_2.jpg) | ![orange2apple_2](samples/fake_orange2apple_2.jpg)| |![orange2apple_3](samples/real_orange2apple_3.jpg) | ![orange2apple_3](samples/fake_orange2apple_3.jpg)|
 
 ## Environment
 
-* TensorFlow 1.0.0
-* Python 3.6.0
+* TensorFlow 
+* Python 3.7.0
 
 ## Data preparing
 
-* First, download a dataset, e.g. apple2orange
-
+* First, download a dataset, e.g. shirt2gamusa
 ```bash
-$ bash download_dataset.sh apple2orange
+$ bash download_dataset.sh shirt2gamusa
 ```
 
 * Write the dataset to tfrecords
@@ -106,9 +99,6 @@ $ python3 train.py  \
     --load_model 20170602-1936
 ```
 
-Here are some funny screenshots from TensorBoard when training orange -> apple:
-
-![train_screenshot](samples/train_screenshot.png)
 
 
 ### Notes
@@ -136,8 +126,6 @@ python3 inference.py --model pretrained/apple2orange.pb \
                      --image_size 256
 ```
 
-## Pretrained models
-My pretrained models are available at https://github.com/vanhuyz/CycleGAN-TensorFlow/releases
 
 ## Contributing
 Please open an issue if you have any trouble or found anything incorrect in my code :)

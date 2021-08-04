@@ -9,7 +9,7 @@ Original paper: https://arxiv.org/abs/1703.10593
 
 | Input | Output | | Input | Output |
 |-------|--------|-|-------|--------|
-|![apple2orange_1](res/2.jpg) | ![apple2orange_1](res/res_2.jpg)| |![apple2orange_2](res/3.jpg) | ![apple2orange_2](res/res_3.jpg.jpg)| 
+|!shirt](res/2.jpg) | ![shirt2gamusa_2](res/res_2.jpg)| |![shirt](res/3.jpg) | ![shirt2gamusa_3](res/res_3.jpg)| 
 
 
 ## Environment
